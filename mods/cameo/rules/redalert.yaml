@@ -337,12 +337,12 @@ World:
 		Side: Other
 		Game: Red Alert
 		Description: Ants: Ants\nSpecial Ability: Ants\nSpecial Unit: Ants
-	FactionCA@modirak:
-		Name: Irak RA
-		InternalName: modirak
+	FactionCA@modiraq:
+		Name: Iraq RA
+		InternalName: modiraq
 		Side: Soviets
 		Game: Red Alert
-		Description: Irak: Desolation\nSpecial Ability: Contamination\nSpecial Unit: Contamination Truck\nSpecial Upgrades: Atomic Tanks
+		Description: Iraq: Desolation\nSpecial Ability: Contamination\nSpecial Unit: Contamination Truck\nSpecial Upgrades: Atomic Tanks
 	FactionCA@modchina:
 		Name: China RA
 		InternalName: modchina
@@ -352,7 +352,7 @@ World:
 	FactionCA@Randomra:
 		Name: Any
 		InternalName: Randomra
-		RandomFactionMembers: allies, soviet, modengland, modgermany, modfrance, modusa, modgreek, modrussia, modukraine, modants, modjapan, modirak
+		RandomFactionMembers: allies, soviet, modengland, modgermany, modfrance, modusa, modgreek, modrussia, modukraine, modants, modjapan, modiraq
         Game: Red Alert
 		Side: Random
 		Description: Random Faction\nA random faction from RA will be chosen when the game starts.
@@ -428,20 +428,20 @@ World:
 	MPStartUnits@mcvonlyrasovietmod:
 		Class: none
 		ClassName: MCV Only
-		Factions: modrussia, modukraine, modirak, modchina
+		Factions: modrussia, modukraine, modiraq, modchina
 		BaseActor: modramcv.soviet
 
 	MPStartUnits@defaultsovietmod:
 		Class: light
 		ClassName: Light Support
-		Factions: modrussia, modukraine, modirak, modchina
+		Factions: modrussia, modukraine, modiraq, modchina
 		BaseActor: modramcv.soviet
 		SupportActors: rae1,rae1,rae1,rae3,rae3,raapc,ftrk
 
 	MPStartUnits@heavysovietmod:
 		Class: heavy
 		ClassName: Heavy Support
-		Factions: modrussia, modukraine, modirak, modchina
+		Factions: modrussia, modukraine, modiraq, modchina
 		BaseActor: modramcv.soviet
 		SupportActors: rae1,rae1,rae1,rae3,rae3,raapc,ftrk,3tnk,3tnk
 
@@ -5462,7 +5462,7 @@ mod2tnku.bot2:
 	Cargo:
 		InitialUnits: rae3
 ####################################################################################################
-#		Modded RA Irak
+#		Modded RA Iraq
 ####################################################################################################
 MOD3TNKI:
 	Inherits: 3TNK
@@ -5473,9 +5473,9 @@ MOD3TNKI:
 	Tooltip:
 		Name: Atomic Heavy Tank
 	Armament:
-		Weapon: 105mmirak
+		Weapon: 105mmIraq
 	Explodes:
-		Weapon: V2ExplodeIrak
+		Weapon: V2ExplodeIraq
 MOD4TNKI:
 	Inherits: 4TNK
 	RenderSprites:
@@ -5485,9 +5485,9 @@ MOD4TNKI:
 	Tooltip:
 		Name: Atomic Mammoth Tank
 	Armament:
-		Weapon: ra120mmirak
+		Weapon: ra120mmIraq
 	Explodes:
-		Weapon: V2ExplodeIrak
+		Weapon: V2ExplodeIraq
 MODV2RLI:
 	Inherits: V2RL
 	RenderSprites:
@@ -5497,9 +5497,9 @@ MODV2RLI:
 	Tooltip:
 		Name: Atomic V2 Rocket
 	Armament:
-		Weapon: SCUDIrak
+		Weapon: SCUDIraq
 	Explodes:
-		Weapon: V2ExplodeIrak
+		Weapon: V2ExplodeIraq
 #####################################################################
 #		Modded RA China
 ####################################################################################################
@@ -7069,7 +7069,7 @@ RAWEAP:
 		Factions: soviet, modukraine, modrussia
 	ProvidesPrerequisite@raatomictank:
 		Prerequisite: raatomictank 
-		Factions: modirak
+		Factions: modiraq
 	ProvidesPrerequisite@katyshaunlock:
 		Prerequisite: katyshaunlock 
 		Factions: modukraine
@@ -7078,7 +7078,7 @@ RAWEAP:
 		Factions:  soviet, modrussia
 	ProvidesPrerequisite@v2rlunlocki:
 		Prerequisite: v2rlunlocki 
-		Factions:  modirak
+		Factions:  modiraq
 RAFACT:
 	GrantExternalConditionToOwner@BuildingsOwned:
 		Condition: BuildingsOwned
@@ -8451,9 +8451,9 @@ MODRAFACT.SOVIET:
     ProvidesPrerequisite@modukraine:
 		Prerequisite: modukraine
 		Factions: modukraine
-    ProvidesPrerequisite@modirak:
-		Prerequisite: modirak
-		Factions: modirak
+    ProvidesPrerequisite@modiraq:
+		Prerequisite: modiraq
+		Factions: modiraq
     ProvidesPrerequisite@modchina:
 		Prerequisite: modchina
 		Factions: modchina
