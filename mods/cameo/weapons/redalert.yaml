@@ -949,7 +949,7 @@ ChainGun.Kamikaze.AA:
 		Damage: 3000
 		ValidTargets: Air
 
-V2ExplodeIrak:
+V2ExplodeIraq:
 	Inherits: SCUD
 	-Report:
 	Warhead@1Dam: SpreadDamage
@@ -1148,14 +1148,14 @@ MiniNuke:
 		Size: 4
 		Delay: 15
 
-105mmirak:
+105mmIraq:
 	Inherits: 105mm
 	Warhead@1Radiation: CreateTintedCells
 		Spread: 1c0
 		Falloff: 100, 66, 33
 		Level: 75
 		LayerName: ra2radiation
-ra120mmirak:
+ra120mmIraq:
 	Inherits: ra120mm
 	Warhead@1Radiation: CreateTintedCells
 		Spread: 1c0
@@ -1163,7 +1163,7 @@ ra120mmirak:
 		Level: 150
 		LayerName: ra2radiation
       
-SCUDIrak:
+SCUDIraq:
 	Inherits: SCUD
 	Warhead@1Radiation: CreateTintedCells
 		Spread: 1c512
