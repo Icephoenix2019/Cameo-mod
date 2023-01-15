@@ -1024,3 +1024,47 @@ MMCONSTRUCTION_YARD_TLEILAXU:
 	ProvidesPrerequisite@faction:
 		Prerequisite: mmtleilaxu
 
+MMMCVTMR:
+    Inherits@MCV: MCV.TOMORROW
+    Inherits@MM: ^MM
+    Tooltip:
+	    Name: Mobile Construction Vehicle (Dawn of Tomorrow)
+    Buildable:
+        BuildPaletteOrder: 400
+	    Prerequisites: !mmtomorrow
+
+MMMCVANSWER:
+    Inherits@MCV: MCV.ANSWER
+    Inherits@MM: ^MM
+    Tooltip:
+	    Name: Mobile Construction Vehicle (Company of Answers)
+    Buildable:
+        BuildPaletteOrder: 410
+	    Prerequisites: !mmanswers
+
+MMMCVDTUSA:
+    Inherits@MCV: MCV.DTUSA
+    Inherits@MM: ^MM
+    Tooltip:
+	    Name: Mobile Construction Vehicle (DT USA)
+    Buildable:
+        BuildPaletteOrder: 420
+	    Prerequisites: !mmdtusa
+
+MMMCVDTRUSSIA:
+    Inherits@MCV: MCV.DTRUSSIA
+    Inherits@MM: ^MM
+    Tooltip:
+	    Name: Mobile Construction Vehicle (DT Russia)
+    Buildable:
+        BuildPaletteOrder: 430
+	    Prerequisites: !mmdtrussia
+
+MMMCVDTJAPAN:
+    Inherits@MCV: MCV.DTJAPAN
+    Inherits@MM: ^MM
+    Tooltip:
+	    Name: Mobile Construction Vehicle (DT Japan)
+    Buildable:
+        BuildPaletteOrder: 440
+	    Prerequisites: !mmdtjapan
