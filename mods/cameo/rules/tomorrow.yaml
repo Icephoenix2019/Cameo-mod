@@ -101,20 +101,20 @@ World:
 		Class: none
 		ClassName: MCV Only
 		Factions: dtrussia
-		BaseActor: ramcv.dtrussia
+		BaseActor: mcv.dtrussia
 
 	MPStartUnits@defaultdtrussia:
 		Class: light
 		ClassName: Light Support
 		Factions: dtrussia
-		BaseActor: ramcv.dtrussia
+		BaseActor: mcv.dtrussia
 		SupportActors: e1,e1,e1,e3,e3,dtstnk,dtstnk
 
 	MPStartUnits@heavydtrussia:
 		Class: heavy
 		ClassName: Heavy Support
 		Factions: dtrussia
-		BaseActor: ramcv.dtrussia
+		BaseActor: mcv.dtrussia
 		SupportActors: e1,e1,e1,e3,e3,dtstnk,dtstnk,mtnk.tomorrow,mtnk.tomorrow
 
 	MPStartUnits@mcvonlydtjapan:
@@ -520,7 +520,7 @@ MCV.TOMORROW:
 	RenderSprites:
 		Image: mcv
 	ProvidesPrerequisite@faction:
-		Prerequisite: mmgdi
+		Prerequisite: mmtomorrow
 
 MCV.TOMORROW.Bot:
     Inherits: MCV.TOMORROW
@@ -573,7 +573,7 @@ MCV.ANSWER:
 	RenderSprites:
 		Image: mcv
 	ProvidesPrerequisite@faction:
-		Prerequisite: mmnod
+		Prerequisite: mmanswers
 
 MCV.ANSWER.Bot:
     Inherits: MCV.ANSWER
@@ -626,7 +626,7 @@ MCV.DTUSA:
 	RenderSprites:
 		Image: mcv
 	ProvidesPrerequisite@faction:
-		Prerequisite: mmnod
+		Prerequisite: mmdtusa
 
 MCV.DTUSA.Bot:
     Inherits: MCV.DTUSA
@@ -635,7 +635,7 @@ MCV.DTUSA.Bot:
         BuildLimit: 1
 		Prerequisites: anyhq, ~techlevel.medium, fix, ~botplayer, allowsMCV
 
-RAMCV.DTRUSSIA:
+MCV.DTRUSSIA:
 	Inherits: ^Vehicle
 	Inherits@selection: ^SelectableSupportUnit
 	Inherits@mcv: ^MCV
@@ -677,10 +677,10 @@ RAMCV.DTRUSSIA:
 	RenderSprites:
 		Image: ramcv
 	ProvidesPrerequisite@faction:
-		Prerequisite: mmsoviet
+		Prerequisite: mmdtrussia
 
-RAMCV.DTRUSSIA.Bot:
-    Inherits: RAMCV.DTRUSSIA
+MCV.DTRUSSIA.Bot:
+    Inherits: MCV.DTRUSSIA
 	Buildable:
 		BuildPaletteOrder: 100
         BuildLimit: 1
@@ -773,7 +773,7 @@ RAFACT.DTRUSSIA:
 		Produces: RABuilding.DTRUSSIA, RADefence.DTRUSSIA
 		RequiresCondition: classicproductionqueues
 	Transforms:
-		IntoActor: ramcv.dtrussia
+		IntoActor: mcv.dtrussia
 		Offset: 1,1
 		Facing: 108
 		RequiresCondition: factundeploy
